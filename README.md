@@ -55,8 +55,6 @@ german-cuisine/
 │   ├── spaghetti-aglio-e-olio.html
 │   ├── spaghetti-carbonara.html
 │   ├── contact.html
-│   ├── privacy-policy.html
-│   └── legal-notice.html
 └── index.html
 ```
 
