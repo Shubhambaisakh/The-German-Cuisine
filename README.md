@@ -8,7 +8,6 @@ A modern, responsive recipe website showcasing authentic German and Italian reci
 - **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
 - **Recipe Collection**: Authentic recipes with step-by-step instructions
 - **User-Friendly Interface**: Clean and modern design with intuitive navigation
-- **GDPR Compliant**: Complete with privacy policy and legal notice
 
 ## 🍽️ Recipes
 
@@ -65,7 +64,7 @@ german-cuisine/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/german-cuisine.git
+git clone https://github.com/Shubhambaisakh/The-German-Cuisine
 ```
 
 2. No build process required! Simply open `index.html` in your browser.
@@ -76,11 +75,6 @@ git clone https://github.com/yourusername/german-cuisine.git
    - Add new images to `assets/img/food`
 
 ## 💡 Key Features Explained
-
-### Recipe Calculator
-- Dynamically updates ingredient quantities
-- Validates input for serving sizes (1-20)
-- Maintains proper ratios for all ingredients
 
 ### Responsive Design
 - Mobile-first approach
@@ -121,8 +115,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or suggestions:
 - Submit an issue on GitHub
-- Use our [contact form](pages/contact.html)
-- Email us at info@german-cuisine-superteam.cc
-
----
-Made with ❤️ by The German Cuisine Team 
+- Email us at baisakhshubham@gmail.com
