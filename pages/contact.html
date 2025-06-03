@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Cooking World - Contact</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="section-contact">
+      <div class="section-contact-content">
+        <h1>Contact Form</h1>
+        <p>
+          Do you have a recipe for us? Suggestions, wishes? We'd love to hear
+          from you!
+        </p>
+        <form class="contact-form" onsubmit="sendMail(event)">
+          <input type="text" required placeholder="Name*" />
+          <input type="email" required placeholder="Email*" />
+          <textarea required placeholder="Your message...*"></textarea>
+          <button type="submit" class="btn">Submit</button>
+          <span>Fields marked with * are required</span>
+        </form>
+      </div>
+    </section>
+
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/contact-form.js"></script>
+  <script src="../js/header.js"></script>
+</html>

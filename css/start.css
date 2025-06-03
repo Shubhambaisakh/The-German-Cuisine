@@ -1,0 +1,123 @@
+section {
+  padding: 120px 48px 120px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-of-type(2) {
+  background-color: #efefef;
+}
+
+.hero-content {
+  max-width: 1920px;
+  display: flex;
+  gap: 24px;
+}
+
+.hero-content .hero-image {
+  border-radius: 16px;
+  flex: 1;
+}
+
+.hero-content .hero-image img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content .hero-text {
+  flex: 2;
+}
+
+.hero-content .hero-text button {
+  margin: 48px 0 0 0;
+}
+
+.new-recipes-content {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+}
+
+.new-recipes-content h2 {
+  text-align: center;
+}
+
+.new-recipes-content .new-recipies-images {
+  margin: 24px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.new-recipes-content .new-recipies-images .new-recipie-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-recipes-content .new-recipies-images .new-recipie-box  h3 {
+  margin: 16px 0 0 0;
+}
+
+.new-recipes-content .new-recipies-images .new-recipie-box .recipie-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-recipes-content .new-recipies-images .new-recipie-box .recipie-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-content {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-content h2 {
+  text-align: center;
+}
+
+.blog-body {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0 0 0;
+}
+
+.blog-text {
+  flex: 2;
+}
+
+.blog-image {
+  flex: 1;
+}
+
+.blog-image img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+@media (max-width: 840px) {
+  section {
+    padding: 80px 24px 80px 24px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .new-recipies-images {
+    flex-direction: column;
+  }
+
+  .blog-body {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}

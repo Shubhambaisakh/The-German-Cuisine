@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/start.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <title>The German Cuisine</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="./partials/header.html"></header>
+
+    <section>
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="./assets/img/food/lasagne-min.jpg" alt="Lasagne Bolognese" />
+        </div>
+        <div class="hero-text">
+          <h2 class="hero-title">Lasagna Bolognese</h2>
+          <p class="hero-description">
+            With this lasagna recipe you bring the culinary highlights Italy directly to the table. As soon as the scent pours out of the oven, the anticipation grows. Lasagna is popular with young and old alike good! The preparation of lasagna is easier than many think. Thanks to my instructions, layering and baking also succeeds Cooking beginners without any problems. Perfect for entertaining family and friends spoil.
+          </p>
+          <a href="./pages/lagnase-bolognese.html">
+            <button class="btn">Open recipe</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="new-recipes-content">
+        <h2>Fancy something new?</h2>
+        <div class="new-recipies-images">
+          <div class="new-recipie-box">
+            <a href="./pages/tortellini.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/tortellini-min.jpg"
+                alt="Tortellini"
+            /></a>
+            <h3>Tortellini</h3>
+          </div>
+          <div class="new-recipie-box">
+            <a href="./pages/spaghetti-aglio-e-olio.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/pasta-aglio-min.jpg"
+                alt="Spaghetti aglio e olio"
+            /></a>
+            <h3>Spaghetti aglio e olio</h3>
+          </div>
+          <div class="new-recipie-box">
+            <a href="./pages/spaghetti-carbonara.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/spaghetti-carbonara-min.jpg"
+                alt="Spaghetti Carbonara"
+            /></a>
+            <h3>Spaghetti Carbonara</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="blog-content">
+        <h2>How to Properly Sharpen Kitchen Knives</h2>
+        <div class="blog-body">
+          <p class="blog-text">
+            No knife stays sharp forever. A suitable sharpening tool and regular maintenance are absolutely necessary to maintain the sharpness of the blade. In this short guide, we would like to explain what you need to sharpen your knife and the technical requirements. You will learn more about the correct handling of whetstones, sharpening rods, and knife sharpeners.
+          </p>
+          <div class="blog-image">
+            <img src="./assets/img/picture/knife.jpg" alt="Knife" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer w3-include-html="./partials/footer.html"></footer>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/header.js"></script>
+</html>

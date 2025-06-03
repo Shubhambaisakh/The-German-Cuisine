@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Cooking World - Lasagna Bolognese</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Lasagna Bolognese</h1>
+        <div class="recipie-img recipie-img-lagnase"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Total Time" />90 Min.
+          </div>
+          <div class="info-icon">
+            <img src="../assets/img/icons/brain-solid.svg" alt="Difficulty" />Medium
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Date"
+            />17.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Ingredients for</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Servings</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >The value must be between 1 and 20</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Preparation</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Preparation" />approx. 45
+            Min.
+          </div>
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Total Time" />Total Time
+            approx. 90 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            First, prepare the Bolognese sauce: Peel and finely chop the onions and garlic.
+            Peel and grate the carrots. Then heat oil in a pot, brown the ground meat evenly,
+            add onions, garlic, and carrots, and continue to sauté. Add tomatoes, tomato paste,
+            ketchup, basil, oregano, thyme, salt, and pepper, and simmer on lowest heat for
+            about 10 minutes.
+          </li>
+          <li>
+            Next, prepare the béchamel sauce: Melt butter in a pot, add flour and immediately
+            stir with a whisk. Now slowly add the milk while stirring constantly. Bring to a slow
+            boil and stir until the sauce thickens. Then season with pepper, salt, and nutmeg.
+            For the lasagna, grease a baking dish with olive oil. Now alternate layers of
+            lasagna sheets and Bolognese sauce. Start with the lasagna sheets, then the sauce,
+            etc., alternating layers.
+          </li>
+          <li>
+            Finally, top with the béchamel sauce and add freshly grated Gouda cheese.
+            Bake in a preheated oven at 180°C (356°F) with fan for about 30 minutes.
+          </li>
+        </ol>
+        <h3>Recipe created by</h3>
+        <div class="autor-info">
+          <img class="autor-img" src="../assets/img/profil/jens.jpg" alt="Profile" />
+          <span class="autor-name">Jens N.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-jens.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>

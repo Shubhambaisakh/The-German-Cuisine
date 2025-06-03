@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Cooking World - Spaghetti Carbonara</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Spaghetti Carbonara</h1>
+        <div class="recipie-img recipie-img-carbonara"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Total Time"
+            />20 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/brain-solid.svg"
+              alt="Difficulty"
+            />Easy
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Date"
+            />17.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Ingredients for</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Servings</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >The value must be between 1 and 20</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Preparation</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Preparation"
+            />approx. 20 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Total Time"
+            />Total Time approx. 20 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            Bring a large pot of water to a boil and add plenty of salt.
+            Cook the spaghetti al dente according to package instructions.
+          </li>
+          <li>
+            While the spaghetti is cooking, cut the pancetta or guanciale into small
+            cubes. Heat a pan over medium heat and fry the pancetta without adding
+            any fat until crispy. Optionally, you can add a peeled clove of garlic
+            for extra flavor while frying. Remove the garlic clove after frying.
+          </li>
+          <li>
+            In a bowl, whisk together the egg with grated Parmesan or Pecorino.
+            Season with some salt and plenty of freshly ground pepper.
+          </li>
+          <li>Drain the spaghetti, reserving some of the cooking water.</li>
+          <li>
+            Immediately add the drained spaghetti to the pan with the hot pancetta
+            and mix well. Remove the pan from the heat and add the egg mixture
+            while stirring constantly so that the egg doesn't scramble but creates
+            a creamy sauce. If needed, add some of the reserved pasta water to
+            make the sauce smoother.
+          </li>
+          <li>
+            Serve the carbonara immediately, optionally topped with additional
+            grated cheese and freshly ground pepper.
+          </li>
+        </ol>
+        <h3>Recipe created by</h3>
+        <div class="autor-info">
+          <img
+            class="autor-img"
+            src="../assets/img/profil/paul.jpg"
+            alt="Profile"
+          />
+          <span class="autor-name">Paul G.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-paul.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>

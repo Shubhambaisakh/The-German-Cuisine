@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Cooking World - Spaghetti Aglio e Olio</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Spaghetti Aglio e Olio</h1>
+        <div class="recipie-img recipie-img-aglioeolio"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Total Time" />20 Min.
+          </div>
+          <div class="info-icon">
+            <img src="../assets/img/icons/brain-solid.svg" alt="Difficulty" />Simple
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Date"
+            />17.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Ingredients for</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Servings</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >The value must be between 1 and 20</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Preparation</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Preparation" />approx. 15
+            Min.
+          </div>
+          <div class="info-icon">
+            <img src="../assets/img/icons/clock-regular.svg" alt="Total Time" />Total Time
+            approx. 20 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            First, cook the spaghetti al dente in plenty of salted water according
+            to package instructions. Meanwhile, peel the garlic and slice it thinly.
+            Finely chop the chili pepper (or prepare dried chili flakes) and set aside.
+          </li>
+          <li>
+            Heat the olive oil in a large pan over medium heat. Carefully sauté
+            the garlic until lightly golden brown - not too dark, or it will become
+            bitter. Then add the chili and briefly toast together.
+          </li>
+          <li>
+            Drain the cooked spaghetti, reserving about half a cup of pasta water.
+            Add the spaghetti directly to the pan with the garlic-chili oil. Add some
+            pasta water and toss well until the oil is well distributed and slightly
+            emulsified.
+          </li>
+          <li>
+            Sprinkle with chopped parsley if desired and serve immediately -
+            optionally with some freshly grated parmesan.
+          </li>
+        </ol>
+
+        <h3>Recipe created by</h3>
+        <div class="autor-info">
+          <img class="autor-img" src="../assets/img/profil/nicolaus.jpg" alt="Profile" />
+          <span class="autor-name">Nicolaus F.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-nico.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>

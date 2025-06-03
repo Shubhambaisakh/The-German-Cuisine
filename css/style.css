@@ -1,0 +1,72 @@
+/* raleway-100 - latin */
+@font-face {
+  font-family: "raleway";
+  src: url("../assets/fonts/raleway.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: "raleway", Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+button {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p {
+  line-height: 24px;
+}
+
+.btn {
+  background-color: #008000;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  padding: 12px 48px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #006400; 
+  transform: scale(1.03); 
+}
+
+@media (max-width: 840px) {
+
+  h1 {
+    font-size: 26px;
+  }
+  
+
+  h2 {
+    font-size: 20px;
+  }
+
+  body, .btn {
+    font-size: 14px;
+  }
+ 
+}

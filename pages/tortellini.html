@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Cooking World - Tortellini</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Tortellini</h1>
+        <div class="recipie-img recipie-img-torellini"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Total Time"
+            />25 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/brain-solid.svg"
+              alt="Difficulty"
+            />Simple
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Date"
+            />18.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Ingredients for</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Servings</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >The value must be between 1 and 20</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Preparation</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Preparation"
+            />approx. 25 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Total Time"
+            />Total Time approx. 25 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            Cook the tortellini in salted water according to package instructions.
+            Meanwhile, peel and finely chop the onion and garlic.
+            Optional: Prepare mushrooms or spinach if you want to enhance the sauce.
+          </li>
+          <li>
+            Heat some oil in a large pan. Sauté the onion and garlic until translucent.
+            Then add the cream and let it simmer on medium heat. Season with salt,
+            pepper, and nutmeg. If desired, stir in grated parmesan or cream cheese
+            to make the sauce creamier.
+          </li>
+          <li>
+            Drain the cooked tortellini and add them directly to the sauce in the pan.
+            Mix everything well and let it sit on low heat for 1-2 minutes so the
+            tortellini can absorb the flavors.
+          </li>
+          <li>
+            Before serving, sprinkle with fresh parsley and some grated parmesan
+            if desired.
+          </li>
+        </ol>
+
+        <h3>Recipe created by</h3>
+        <div class="autor-info">
+          <img
+            class="autor-img"
+            src="../assets/img/profil/sinan.jpg"
+            alt="Profile"
+          />
+          <span class="autor-name">Sinan K.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-sinan.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>
